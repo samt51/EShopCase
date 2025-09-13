@@ -1,0 +1,16 @@
+/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Application/bin/Debug/net8.0/EShopCase.Application.deps.json
+/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Application/bin/Debug/net8.0/EShopCase.Application.dll
+/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Application/bin/Debug/net8.0/EShopCase.Application.pdb
+/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Application/bin/Debug/net8.0/EShopCase.Domain.dll
+/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Application/bin/Debug/net8.0/EShopCase.Domain.pdb
+/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Application/obj/Debug/net8.0/EShopCase.Application.csproj.AssemblyReference.cache
+/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Application/obj/Debug/net8.0/EShopCase.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Application/obj/Debug/net8.0/EShopCase.Application.AssemblyInfoInputs.cache
+/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Application/obj/Debug/net8.0/EShopCase.Application.AssemblyInfo.cs
+/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Application/obj/Debug/net8.0/EShopCase.Application.csproj.CoreCompileInputs.cache
+/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Application/obj/Debug/net8.0/EShopCase.Application.sourcelink.json
+/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Application/obj/Debug/net8.0/EShopCas.7ECC2ED9.Up2Date
+/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Application/obj/Debug/net8.0/EShopCase.Application.dll
+/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Application/obj/Debug/net8.0/refint/EShopCase.Application.dll
+/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Application/obj/Debug/net8.0/EShopCase.Application.pdb
+/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Application/obj/Debug/net8.0/ref/EShopCase.Application.dll

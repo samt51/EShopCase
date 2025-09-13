@@ -8,6 +8,11 @@ public class Category : EntityBase
     {
         
     }
+    public Category(int id,string name)
+    {
+        this.Id = id;
+        this.Name = name;   
+    }
     public Category(string name)
     {
         this.Name = name;   

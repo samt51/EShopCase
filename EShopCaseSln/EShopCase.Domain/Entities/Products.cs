@@ -17,7 +17,7 @@ public class Products : EntityBase
         this.CategoryId = categoryId;
     }
     public string Name { get; set; }
-    public string Description { get; set; }
+    public string Description { get; set; } = string.Empty;
     public decimal Price { get; set; }
     public int Stock { get; set; }
     public int CategoryId { get; set; }
