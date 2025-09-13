@@ -1,6 +1,18 @@
-﻿services:
+﻿version: "3.9"
+
+services:
   eshopcase.api:
-    image: eshopcase.api
+    container_name: eshopcase-api
     build:
       context: .
-      dockerfile: EShopCase.Api/Dockerfile
+      dockerfile: Presentation/EShopCase.Api/Dockerfile
+    ports:
+      - "8088:8080"          
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    restart: unless-stopped
+
+
+networks:
+  default:
+    name: eshopcase-net

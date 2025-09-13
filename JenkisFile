@@ -1,0 +1,62 @@
+pipeline {
+  agent any
+
+  environment {
+    // 🔧 Proje yolları
+    SERVICE_DIR = 'Presentation/EShopCase.Api'   // .csproj & Dockerfile burada
+    COMPOSE_PATH= 'compose.yaml'                 // repo kökünde
+    DOTNET_CLI_TELEMETRY_OPTOUT = '1'
+  }
+
+  options {
+    timestamps()
+    buildDiscarder(logRotator(numToKeepStr: '20'))
+    timeout(time: 30, unit: 'MINUTES')
+  }
+
+  stages {
+    stage('Checkout') {
+      steps {
+        checkout scm
+        sh 'git config --global --add safe.directory "$WORKSPACE"'
+      }
+    }
+
+    stage('Dotnet Restore/Build/Test') {
+      steps {
+        dir("${SERVICE_DIR}") {
+          // .NET SDK container ile; Jenkins node’unda .NET kurulu olmasa da olur
+          sh '''
+            docker run --rm -v "$PWD/../..":/src -w /src/${SERVICE_DIR} mcr.microsoft.com/dotnet/sdk:8.0 \
+              bash -lc "
+                dotnet restore &&
+                dotnet build -c Release --no-restore &&
+                dotnet test  -c Release --no-build --logger trx --results-directory /src/TestResults
+              "
+          '''
+        }
+      }
+      post {
+        always {
+          junit allowEmptyResults: true, testResults: 'TestResults/**/*.trx'
+        }
+      }
+    }
+
+    stage('Compose Up (Local)') {
+      steps {
+        // compose.yaml içindeki build talimatını kullanarak image’ı lokalde build edip ayağa kaldırır
+        sh '''
+          docker compose -f ${COMPOSE_PATH} down || true
+          docker compose -f ${COMPOSE_PATH} up -d --build
+          docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Ports}}"
+        '''
+      }
+    }
+  }
+
+  post {
+    success { echo "✅ Lokal build & run tamam." }
+    failure { echo "❌ Hata oluştu." }
+  }
+}
