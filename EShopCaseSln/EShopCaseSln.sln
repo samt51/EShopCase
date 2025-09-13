@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{00C9B3D0-8A03-4324-9615-FDABD64ABD95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{01DC5B8D-3D9D-4866-BAE6-171A226F5763}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{006DAF80-FB9A-47C0-996C-C0B5BF1E3897}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShopCase.Domain", "EShopCase.Domain\EShopCase.Domain.csproj", "{55E8647E-8F9C-4F9C-BFE6-6B0FB2B974D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShopCase.Application", "EShopCase.Application\EShopCase.Application.csproj", "{5D5E7435-73FA-4847-B8FB-DB7F430A7BCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShopCase.Infrastructure", "EShopCase.Infrastructure\EShopCase.Infrastructure.csproj", "{8F8CEE59-308D-4836-BBB4-0684672521C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShopCase.Api", "EShopCase.Api\EShopCase.Api.csproj", "{F23CAAA3-510A-4F86-835F-E2956AB07958}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{94BEE691-473F-4ACF-811D-945F10C24F22}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{55E8647E-8F9C-4F9C-BFE6-6B0FB2B974D7} = {00C9B3D0-8A03-4324-9615-FDABD64ABD95}
+		{5D5E7435-73FA-4847-B8FB-DB7F430A7BCB} = {00C9B3D0-8A03-4324-9615-FDABD64ABD95}
+		{8F8CEE59-308D-4836-BBB4-0684672521C8} = {01DC5B8D-3D9D-4866-BAE6-171A226F5763}
+		{F23CAAA3-510A-4F86-835F-E2956AB07958} = {006DAF80-FB9A-47C0-996C-C0B5BF1E3897}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55E8647E-8F9C-4F9C-BFE6-6B0FB2B974D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55E8647E-8F9C-4F9C-BFE6-6B0FB2B974D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55E8647E-8F9C-4F9C-BFE6-6B0FB2B974D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55E8647E-8F9C-4F9C-BFE6-6B0FB2B974D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D5E7435-73FA-4847-B8FB-DB7F430A7BCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D5E7435-73FA-4847-B8FB-DB7F430A7BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D5E7435-73FA-4847-B8FB-DB7F430A7BCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D5E7435-73FA-4847-B8FB-DB7F430A7BCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F8CEE59-308D-4836-BBB4-0684672521C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F8CEE59-308D-4836-BBB4-0684672521C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F8CEE59-308D-4836-BBB4-0684672521C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F8CEE59-308D-4836-BBB4-0684672521C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F23CAAA3-510A-4F86-835F-E2956AB07958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F23CAAA3-510A-4F86-835F-E2956AB07958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F23CAAA3-510A-4F86-835F-E2956AB07958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F23CAAA3-510A-4F86-835F-E2956AB07958}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
