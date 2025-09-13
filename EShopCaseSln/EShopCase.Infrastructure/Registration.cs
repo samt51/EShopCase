@@ -18,13 +18,14 @@ public static class Registration
         services.AddDbContext<AppDbContext>(opt =>
             opt.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
         
+        services.AddAutoMapper(typeof(MappingProfile).Assembly);
         services.AddScoped(typeof(IReadRepository<>), typeof(ReadRepository<>));
         services.AddScoped(typeof(IWriteRepository<>), typeof(WriteRepository<>));
 
         services.AddSingleton<IMapper, Mapper>();
 
         services.AddScoped<IUnitOfWork, UnitOfWork>();
-
+        
 
     }
 }

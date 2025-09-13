@@ -8,10 +8,10 @@ public class Roles :EntityBase
     {
 
     }
-    public Roles(string name, int id)
+    public Roles(int id,string name)
     {
-        this.Name = name;
         this.Id = id;
+        this.Name = name;
     }
     public string Name { get; set; }
 }
