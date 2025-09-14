@@ -1,4 +1,7 @@
 using AutoMapper;
+using EShopCase.Application.Dtos.CategoryDtos;
+using EShopCase.Application.Features.ProductsFeature.Queries.GetAllProduct;
+using EShopCase.Domain.Entities;
 
 namespace EShopCase.Infrastructure.Concrete.Mapping;
 
@@ -6,8 +9,10 @@ public class MappingProfile : Profile
 {
     public MappingProfile()
     {
-        // örnekler
-        // CreateMap<Product, ProductDto>().ReverseMap();
-        // CreateMap<Order, OrderDto>();
+       CreateMap<Category,CategoryResponseDto>().ReverseMap();
+
+       CreateMap<Products, GetAllProductQueryResponse>()
+           .ForMember(d => d.CategoryResponse, 
+               o => o.MapFrom(s => s.Category));
     }
 }

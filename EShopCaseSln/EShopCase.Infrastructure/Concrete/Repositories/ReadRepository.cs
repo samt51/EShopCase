@@ -18,7 +18,28 @@ public class ReadRepository<T> : IReadRepository<T> where T : class, IEntityBase
         private DbSet<T> Table { get => dbContext.Set<T>(); }
 
 
+        public async Task<IQueryable<T>> GetAllQueryAsync(Expression<Func<T, bool>>? predicate = null, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null,
+            Expression<Func<T, T>>? selector = null, bool enableTracking = false)
+        {
+            IQueryable<T> query = Table;
+            
+            if (!enableTracking)
+                query = query.AsNoTracking();
+            
+            if (include is not null)
+                query = include(query);
 
+            if (predicate is not null)
+                query = query.Where(predicate);
+
+            if (selector is not null)
+                query = query.Select(selector);
+
+            if (orderBy is not null)
+                query = orderBy(query);
+
+            return query;
+        }
 
         public async Task<IList<T>> GetAllAsync(
             Expression<Func<T, bool>>? predicate = null,
