@@ -21,7 +21,7 @@ public class DeleteProductCommandHandler : BaseHandler,IRequestHandler<DeletePro
 
         await unitOfWork.OpenTransactionAsync(cancellationToken);
 
-        await unitOfWork.GetWriteRepository<Products>().UpdateAsync(data);
+        await unitOfWork.GetWriteRepository<Products>().UpdateAsync(data,cancellationToken);
 
         await unitOfWork.SaveAsync(cancellationToken);
         

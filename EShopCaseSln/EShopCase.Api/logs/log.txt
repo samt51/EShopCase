@@ -1289,3 +1289,55 @@ RETURNING "Id";
 2025-09-14 14:00:39.586 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
 2025-09-14 14:00:39.586 +03:00 [INF] HTTP POST /api/Product/Create responded 200 in 79456.2335 ms
 2025-09-14 14:00:39.587 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Product/Create - 200 null application/json; charset=utf-8 79466.7013ms
+2025-09-14 14:35:43.325 +03:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 14:35:43.393 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 14:35:43.448 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 14:35:43.565 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 14:35:43.612 +03:00 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 14:35:43.620 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-14 14:35:43.800 +03:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-14 14:35:43.807 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-14 14:35:43.808 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-14 14:35:43.810 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-14 14:35:43.812 +03:00 [INF] Development migrate & seed completed.
+2025-09-14 14:35:43.869 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-14 14:35:43.922 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-14 14:35:43.922 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-14 14:35:43.922 +03:00 [INF] Hosting environment: Development
+2025-09-14 14:35:43.922 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api

@@ -28,7 +28,7 @@ public class WriteRepository<T> : IWriteRepository<T> where T : class, IEntityBa
     {
         await Table.AddRangeAsync(entities);
     }
-    public async Task<T> UpdateAsync(T entity)
+    public async Task<T> UpdateAsync(T entity,CancellationToken cancellationToken = default)
     {
         await Task.Run(() => Table.Update(entity));
         return entity;
