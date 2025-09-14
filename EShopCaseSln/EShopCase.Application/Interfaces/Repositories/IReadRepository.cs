@@ -33,7 +33,7 @@ public interface IReadRepository<T> where T : class, IEntityBase, new()
     /// <param name="enableTracking"></param>
     /// <returns></returns>
     /// <exception cref="NotFoundException"></exception>
-    Task<T?> GetAsync(Expression<Func<T, bool>> predicate,
+    Task<T> GetAsync(Expression<Func<T, bool>> predicate,
         Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null,
         bool enableTracking = false);
 

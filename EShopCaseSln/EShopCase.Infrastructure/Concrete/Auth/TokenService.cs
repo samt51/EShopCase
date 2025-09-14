@@ -2,6 +2,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using EShopCase.Application.Dtos.LoginDto;
 using EShopCase.Application.Interfaces.Aut.Jwt;
 using EShopCase.Domain.Entities;
 using Microsoft.Extensions.Configuration;
@@ -81,5 +82,35 @@ namespace EShopCase.Infrastructure.Concrete.Auth;
 
             return principal;
 
+        }
+        public Task<LoginCommandResponse> GenerateToken(GenerateTokenRequest roleRequest)
+        {
+
+            SymmetricSecurityKey symmetricSecurityKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(configuration["JWT:Secret"]));
+
+            var notBefore = DateTime.Now;
+            var expiresTime = DateTime.Now.AddDays(1);
+
+
+            JwtSecurityToken jwt = new JwtSecurityToken(
+                issuer: configuration["JWT:Issuer"],
+                audience: configuration["JWT:Audience"],
+                claims: new List<Claim> {
+                    new Claim("role", roleRequest.Role),
+                    new Claim(ClaimTypes.Email,roleRequest.Email),
+                    new Claim("Id",roleRequest.Id.ToString()),
+                    new Claim(ClaimTypes.Name,roleRequest.Email.ToString())
+
+                },
+                expires: expiresTime,
+                notBefore: notBefore,
+                signingCredentials: new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256)
+            );
+
+            return Task.FromResult(new LoginCommandResponse
+            {
+                Token = new JwtSecurityTokenHandler().WriteToken(jwt),
+                TokenExpireDate = notBefore
+            });
         }
     }
