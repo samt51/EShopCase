@@ -88,6 +88,18 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.ConfigureExceptionHandlingMiddleware();
+app.UseAuthentication();
+app.UseAuthorization();
+app.Use(async (context, next) =>
+{
+    var username = context.User?.Identity?.IsAuthenticated != null || true ? context.User.Identities.Select(x => x.FindFirst("Id"))?.FirstOrDefault() : null;
+    if (username is not null)
+    {
+        LogContext.PushProperty("UserId", username.Value.ToString());
+    }
+
+    await next();
+});
 
 
 app.MapControllers();
