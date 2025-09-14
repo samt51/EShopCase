@@ -36,5 +36,7 @@ public class ResponseDto<T>
         Errors.Add(errors);
         return new ResponseDto<T> { Errors = Errors, StatusCode = statusCode, IsSuccess = false };
     }
+    
+
 
 }
