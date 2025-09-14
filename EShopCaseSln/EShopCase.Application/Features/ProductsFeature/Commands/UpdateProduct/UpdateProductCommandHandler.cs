@@ -20,7 +20,7 @@ public class UpdateProductCommandHandler : BaseHandler,IRequestHandler<UpdatePro
 
         await unitOfWork.OpenTransactionAsync(cancellationToken);
         
-        await unitOfWork.GetWriteRepository<Products>().UpdateAsync(map);
+        await unitOfWork.GetWriteRepository<Products>().UpdateAsync(map, cancellationToken);
 
         await unitOfWork.SaveAsync(cancellationToken);
         

@@ -8,12 +8,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EShopCase.Application.Features.ProductsFeature.Queries.GetAllProduct;
 
-public class GetAllProductQueryHandler : BaseHandler, IRequestHandler<GetAllProductQueryRequest, ResponseDto<PagedResult<GetAllProductQueryResponse>>>
+public class GetAllProductQueryHandler(IMapper mapper, IUnitOfWork unitOfWork) : BaseHandler(mapper, unitOfWork),
+    IRequestHandler<GetAllProductQueryRequest, ResponseDto<PagedResult<GetAllProductQueryResponse>>>
 {
-    public GetAllProductQueryHandler(IMapper mapper, IUnitOfWork unitOfWork) : base(mapper, unitOfWork)
-    {
-    }
-
     public async Task<ResponseDto<PagedResult<GetAllProductQueryResponse>>> Handle(GetAllProductQueryRequest request, CancellationToken cancellationToken)
     {
         
@@ -59,7 +56,6 @@ public class GetAllProductQueryHandler : BaseHandler, IRequestHandler<GetAllProd
         var total = await query.CountAsync(cancellationToken);
 
 
-        var map = mapper.Map< GetAllProductQueryResponse,Products>(query);
         
         var items = await query
             .Skip((page - 1) * pageSize)

@@ -15,6 +15,7 @@ public static class Registration
             
         services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(assembly));
         
+        
         return services;
 
     }

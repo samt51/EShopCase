@@ -154,3 +154,8 @@
 /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
 /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api/bin/Debug/net8.0/Asp.Versioning.Abstractions.dll
+/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api/bin/Debug/net8.0/Asp.Versioning.Http.dll
+/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api/bin/Debug/net8.0/Asp.Versioning.Mvc.dll
+/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api/bin/Debug/net8.0/Asp.Versioning.Mvc.ApiExplorer.dll
+/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll
