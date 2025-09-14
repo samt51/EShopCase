@@ -98,3 +98,1194 @@ SELECT EXISTS (
 2025-09-14 03:26:34.306 +03:00 [INF] Hosting environment: Development
 2025-09-14 03:26:34.306 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
 2025-09-14 03:26:36.384 +03:00 [INF] Application is shutting down...
+2025-09-14 12:52:10.246 +03:00 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 12:52:10.321 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 12:52:10.358 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 12:52:10.411 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 12:52:10.412 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 12:52:10.422 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-14 12:52:10.612 +03:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-14 12:52:10.619 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-14 12:52:10.626 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-14 12:52:10.650 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-14 12:52:10.653 +03:00 [INF] Development migrate & seed completed.
+2025-09-14 12:53:31.192 +03:00 [INF] Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 12:53:31.242 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 12:53:31.279 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 12:53:31.330 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 12:53:31.357 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 12:53:31.365 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-14 12:53:31.479 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-14 12:53:31.484 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-14 12:53:31.486 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-14 12:53:31.512 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-14 12:53:31.514 +03:00 [INF] Development migrate & seed completed.
+2025-09-14 13:01:01.247 +03:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:01:01.315 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:01:01.337 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:01:01.346 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:01:01.348 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:01:01.361 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-14 13:01:01.515 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-14 13:01:01.528 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-14 13:01:01.532 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-14 13:01:01.536 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-14 13:01:01.538 +03:00 [INF] Development migrate & seed completed.
+2025-09-14 13:01:01.605 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-14 13:01:01.654 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-14 13:01:01.655 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-14 13:01:01.655 +03:00 [INF] Hosting environment: Development
+2025-09-14 13:01:01.655 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-14 13:01:04.792 +03:00 [INF] Application is shutting down...
+2025-09-14 13:09:58.472 +03:00 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:09:58.528 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:09:58.550 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:09:58.555 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:09:58.556 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:09:58.562 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-14 13:09:58.675 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-14 13:09:58.680 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-14 13:09:58.683 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-14 13:09:58.685 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-14 13:09:58.686 +03:00 [INF] Development migrate & seed completed.
+2025-09-14 13:09:58.726 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-14 13:09:58.755 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-14 13:09:58.755 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-14 13:09:58.755 +03:00 [INF] Hosting environment: Development
+2025-09-14 13:09:58.755 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-14 13:10:00.634 +03:00 [INF] Application is shutting down...
+2025-09-14 13:16:44.616 +03:00 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:16:44.721 +03:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:16:44.821 +03:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:16:44.948 +03:00 [INF] Executed DbCommand (96ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:16:44.972 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:16:44.980 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-14 13:16:45.191 +03:00 [INF] Executed DbCommand (67ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-14 13:16:45.197 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-14 13:16:45.267 +03:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-14 13:16:45.293 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-14 13:16:45.295 +03:00 [INF] Development migrate & seed completed.
+2025-09-14 13:16:45.371 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-14 13:16:45.423 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-14 13:16:45.423 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-14 13:16:45.423 +03:00 [INF] Hosting environment: Development
+2025-09-14 13:16:45.423 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-14 13:17:05.008 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-09-14 13:17:05.174 +03:00 [INF] HTTP GET /swagger/index.html responded 200 in 128.6101 ms
+2025-09-14 13:17:05.178 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 170.999ms
+2025-09-14 13:17:05.198 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - null null
+2025-09-14 13:17:05.202 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js - null null
+2025-09-14 13:17:05.253 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js - null null
+2025-09-14 13:17:05.474 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-09-14 13:17:05.475 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-09-14 13:17:05.476 +03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 222.1962 ms
+2025-09-14 13:17:05.476 +03:00 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 278.2813 ms
+2025-09-14 13:17:05.563 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - 200 152034 text/css 365.5712ms
+2025-09-14 13:17:05.478 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 224.2029ms
+2025-09-14 13:17:05.649 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-09-14 13:17:05.649 +03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 447.1225 ms
+2025-09-14 13:17:05.649 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 447.6379ms
+2025-09-14 13:17:05.794 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-09-14 13:17:05.825 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - null null
+2025-09-14 13:17:05.826 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-09-14 13:17:05.826 +03:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.6553 ms
+2025-09-14 13:17:05.826 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - 200 628 image/png 1.309ms
+2025-09-14 13:17:06.155 +03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 359.9736 ms
+2025-09-14 13:17:06.155 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 361.4517ms
+2025-09-14 13:17:31.716 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Product/Create - application/json 91
+2025-09-14 13:17:31.762 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-14 13:17:31.823 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:17:31.836 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandResponse]] CreateAsync(EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandRequest) on controller EShopCase.Api.Controllers.ProductCont.ProductController (EShopCase.Api).
+2025-09-14 13:17:31.838 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-14 13:17:31.895 +03:00 [INF] Executing action method EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) - Validation state: "Valid"
+2025-09-14 13:17:32.092 +03:00 [INF] Executed action EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) in 254.374ms
+2025-09-14 13:17:32.093 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:17:32.141 +03:00 [ERR] Unhandled exception
+System.MissingMethodException: Method not found: 'Void AutoMapper.MapperConfiguration..ctor(AutoMapper.MapperConfigurationExpression)'.
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.<>c.<AddAutoMapperClasses>b__12_2(IServiceProvider sp)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.<>c.<AddAutoMapperClasses>b__12_3(IServiceProvider sp)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0(CancellationToken t)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.Handle(IRequest`1 request, IServiceProvider serviceProvider, CancellationToken cancellationToken)
+   at MediatR.Mediator.Send[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync(CreateProductCommandRequest request) in /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api/Controllers/ProductCont/ProductController.cs:line 39
+   at lambda_method19(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_4>d.MoveNext() in /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api/Program.cs:line 135
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EShopCase.Application.Middleware.Exceptions.ExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Application/Middleware/Exceptions/ExceptionMiddleware.cs:line 19
+2025-09-14 13:17:32.202 +03:00 [ERR] HTTP POST /api/Product/Create responded 500 in 444.4836 ms
+2025-09-14 13:17:32.203 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Product/Create - 500 null application/json; charset=utf-8 487.037ms
+2025-09-14 13:17:49.563 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Product/Create - application/json 91
+2025-09-14 13:17:49.573 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:17:49.574 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandResponse]] CreateAsync(EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandRequest) on controller EShopCase.Api.Controllers.ProductCont.ProductController (EShopCase.Api).
+2025-09-14 13:17:49.578 +03:00 [INF] Executing action method EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) - Validation state: "Valid"
+2025-09-14 13:18:09.296 +03:00 [INF] Executed action EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) in 19721.5711ms
+2025-09-14 13:18:09.297 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:18:09.322 +03:00 [ERR] Unhandled exception
+System.MissingMethodException: Method not found: 'Void AutoMapper.MapperConfiguration..ctor(AutoMapper.MapperConfigurationExpression)'.
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.<>c.<AddAutoMapperClasses>b__12_2(IServiceProvider sp)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.<>c.<AddAutoMapperClasses>b__12_3(IServiceProvider sp)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0(CancellationToken t)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.Handle(IRequest`1 request, IServiceProvider serviceProvider, CancellationToken cancellationToken)
+   at MediatR.Mediator.Send[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync(CreateProductCommandRequest request) in /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api/Controllers/ProductCont/ProductController.cs:line 39
+   at lambda_method19(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_4>d.MoveNext() in /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api/Program.cs:line 135
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EShopCase.Application.Middleware.Exceptions.ExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Application/Middleware/Exceptions/ExceptionMiddleware.cs:line 19
+2025-09-14 13:18:09.324 +03:00 [ERR] HTTP POST /api/Product/Create responded 500 in 19756.5753 ms
+2025-09-14 13:18:09.325 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Product/Create - 500 null application/json; charset=utf-8 19762.4249ms
+2025-09-14 13:18:26.324 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Product/Create - application/json 91
+2025-09-14 13:18:26.330 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:18:26.333 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandResponse]] CreateAsync(EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandRequest) on controller EShopCase.Api.Controllers.ProductCont.ProductController (EShopCase.Api).
+2025-09-14 13:18:26.335 +03:00 [INF] Executing action method EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) - Validation state: "Valid"
+2025-09-14 13:18:29.016 +03:00 [INF] Executed action EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) in 2682.315ms
+2025-09-14 13:18:29.016 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:18:29.040 +03:00 [ERR] Unhandled exception
+System.MissingMethodException: Method not found: 'Void AutoMapper.MapperConfiguration..ctor(AutoMapper.MapperConfigurationExpression)'.
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.<>c.<AddAutoMapperClasses>b__12_2(IServiceProvider sp)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.<>c.<AddAutoMapperClasses>b__12_3(IServiceProvider sp)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0(CancellationToken t)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.Handle(IRequest`1 request, IServiceProvider serviceProvider, CancellationToken cancellationToken)
+   at MediatR.Mediator.Send[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync(CreateProductCommandRequest request) in /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api/Controllers/ProductCont/ProductController.cs:line 39
+   at lambda_method19(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_4>d.MoveNext() in /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api/Program.cs:line 135
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EShopCase.Application.Middleware.Exceptions.ExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Application/Middleware/Exceptions/ExceptionMiddleware.cs:line 19
+2025-09-14 13:18:29.043 +03:00 [ERR] HTTP POST /api/Product/Create responded 500 in 2717.2143 ms
+2025-09-14 13:18:29.043 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Product/Create - 500 null application/json; charset=utf-8 2719.5423ms
+2025-09-14 13:18:42.054 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Product/Create - application/json 91
+2025-09-14 13:18:42.058 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:18:42.059 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandResponse]] CreateAsync(EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandRequest) on controller EShopCase.Api.Controllers.ProductCont.ProductController (EShopCase.Api).
+2025-09-14 13:18:42.066 +03:00 [INF] Executing action method EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) - Validation state: "Valid"
+2025-09-14 13:18:43.973 +03:00 [INF] Executed action EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) in 1913.3468ms
+2025-09-14 13:18:43.973 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:20:50.391 +03:00 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:20:50.508 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:20:50.523 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:20:50.651 +03:00 [INF] Executed DbCommand (71ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:20:50.725 +03:00 [INF] Executed DbCommand (73ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:20:50.739 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-14 13:20:50.937 +03:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-14 13:20:50.944 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-14 13:20:50.947 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-14 13:20:50.973 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-14 13:20:50.975 +03:00 [INF] Development migrate & seed completed.
+2025-09-14 13:20:51.042 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-14 13:20:51.087 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-14 13:20:51.087 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-14 13:20:51.087 +03:00 [INF] Hosting environment: Development
+2025-09-14 13:20:51.087 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-14 13:20:54.851 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Product/Create - application/json 91
+2025-09-14 13:20:54.892 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-14 13:20:54.929 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:20:54.939 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandResponse]] CreateAsync(EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandRequest) on controller EShopCase.Api.Controllers.ProductCont.ProductController (EShopCase.Api).
+2025-09-14 13:20:54.942 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-14 13:20:55.024 +03:00 [INF] Executing action method EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) - Validation state: "Valid"
+2025-09-14 13:20:57.905 +03:00 [INF] Executed action EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) in 2964.0721ms
+2025-09-14 13:20:57.907 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:22:07.133 +03:00 [INF] Executed DbCommand (88ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:22:07.198 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:22:07.226 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:22:07.255 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:22:07.257 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:22:07.270 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-14 13:22:07.493 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-14 13:22:07.595 +03:00 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-14 13:22:07.639 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-14 13:22:07.662 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-14 13:22:07.666 +03:00 [INF] Development migrate & seed completed.
+2025-09-14 13:22:07.826 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-14 13:22:07.920 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-14 13:22:07.920 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-14 13:22:07.921 +03:00 [INF] Hosting environment: Development
+2025-09-14 13:22:07.921 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-14 13:22:11.710 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Product/Create - application/json 91
+2025-09-14 13:22:11.768 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-14 13:22:11.810 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:22:11.820 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandResponse]] CreateAsync(EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandRequest) on controller EShopCase.Api.Controllers.ProductCont.ProductController (EShopCase.Api).
+2025-09-14 13:22:11.822 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-14 13:22:11.909 +03:00 [INF] Executing action method EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) - Validation state: "Valid"
+2025-09-14 13:22:14.910 +03:00 [INF] Executed action EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) in 3088.486ms
+2025-09-14 13:22:14.912 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:24:40.821 +03:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:24:40.875 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:24:40.957 +03:00 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:24:40.986 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:24:41.012 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:24:41.018 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-14 13:24:41.178 +03:00 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-14 13:24:41.209 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-14 13:24:41.233 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-14 13:24:41.379 +03:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-14 13:24:41.381 +03:00 [INF] Development migrate & seed completed.
+2025-09-14 13:24:41.463 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-14 13:24:41.514 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-14 13:24:41.514 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-14 13:24:41.514 +03:00 [INF] Hosting environment: Development
+2025-09-14 13:24:41.514 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-14 13:24:46.769 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Product/Create - application/json 91
+2025-09-14 13:24:46.799 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-14 13:24:46.850 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:24:46.863 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandResponse]] CreateAsync(EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandRequest) on controller EShopCase.Api.Controllers.ProductCont.ProductController (EShopCase.Api).
+2025-09-14 13:24:46.866 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-14 13:24:46.948 +03:00 [INF] Executing action method EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) - Validation state: "Valid"
+2025-09-14 13:24:50.609 +03:00 [INF] Executed action EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) in 3743.5443ms
+2025-09-14 13:24:50.611 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:28:01.875 +03:00 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:28:01.926 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:28:02.057 +03:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:28:02.198 +03:00 [INF] Executed DbCommand (65ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:28:02.272 +03:00 [INF] Executed DbCommand (73ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:28:02.279 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-14 13:28:02.463 +03:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-14 13:28:02.468 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-14 13:28:02.470 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-14 13:28:02.471 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-14 13:28:02.473 +03:00 [INF] Development migrate & seed completed.
+2025-09-14 13:28:02.537 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-14 13:28:02.582 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-14 13:28:02.582 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-14 13:28:02.582 +03:00 [INF] Hosting environment: Development
+2025-09-14 13:28:02.582 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-14 13:28:05.294 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Product/Create - application/json 91
+2025-09-14 13:28:05.324 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-14 13:28:05.443 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:28:05.468 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandResponse]] CreateAsync(EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandRequest) on controller EShopCase.Api.Controllers.ProductCont.ProductController (EShopCase.Api).
+2025-09-14 13:28:05.473 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-14 13:28:05.578 +03:00 [INF] Executing action method EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) - Validation state: "Valid"
+2025-09-14 13:28:09.056 +03:00 [INF] Executed action EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) in 3583.5908ms
+2025-09-14 13:28:09.058 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:29:10.507 +03:00 [INF] Executed DbCommand (111ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:29:10.598 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:29:10.637 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:29:10.696 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:29:10.743 +03:00 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:29:10.751 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-14 13:29:10.925 +03:00 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-14 13:29:10.932 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-14 13:29:11.005 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-14 13:29:11.030 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-14 13:29:11.032 +03:00 [INF] Development migrate & seed completed.
+2025-09-14 13:29:11.097 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-14 13:29:11.160 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-14 13:29:11.185 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-14 13:29:11.186 +03:00 [INF] Hosting environment: Development
+2025-09-14 13:29:11.186 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-14 13:29:33.482 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Product/Create - application/json 91
+2025-09-14 13:29:33.538 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-14 13:29:33.583 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:29:33.593 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandResponse]] CreateAsync(EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandRequest) on controller EShopCase.Api.Controllers.ProductCont.ProductController (EShopCase.Api).
+2025-09-14 13:29:33.596 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-14 13:29:33.669 +03:00 [INF] Executing action method EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) - Validation state: "Valid"
+2025-09-14 13:29:37.214 +03:00 [INF] Executed action EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) in 3618.7175ms
+2025-09-14 13:29:37.215 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:38:04.309 +03:00 [INF] Executed DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:38:04.387 +03:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:38:04.492 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:38:04.638 +03:00 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:38:04.665 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:38:04.681 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-14 13:38:04.917 +03:00 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-14 13:38:04.929 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-14 13:38:05.051 +03:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-14 13:38:05.172 +03:00 [INF] Executed DbCommand (74ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-14 13:38:05.176 +03:00 [INF] Development migrate & seed completed.
+2025-09-14 13:38:05.258 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-14 13:38:05.406 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-14 13:38:05.408 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-14 13:38:05.409 +03:00 [INF] Hosting environment: Development
+2025-09-14 13:38:05.409 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-14 13:38:11.198 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Product/Create - application/json 91
+2025-09-14 13:38:11.253 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-14 13:38:11.302 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:38:11.313 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandResponse]] CreateAsync(EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandRequest) on controller EShopCase.Api.Controllers.ProductCont.ProductController (EShopCase.Api).
+2025-09-14 13:38:11.315 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-14 13:38:11.396 +03:00 [INF] Executing action method EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) - Validation state: "Valid"
+2025-09-14 13:38:14.748 +03:00 [INF] Executed action EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) in 3433.4442ms
+2025-09-14 13:38:14.749 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:54:26.392 +03:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:54:26.481 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:54:26.615 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:54:26.668 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:54:26.694 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:54:26.704 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-14 13:54:26.820 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-14 13:54:26.920 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-14 13:54:26.924 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-14 13:54:26.931 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-14 13:54:26.933 +03:00 [INF] Development migrate & seed completed.
+2025-09-14 13:54:27.027 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-14 13:54:27.130 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-14 13:54:27.130 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-14 13:54:27.130 +03:00 [INF] Hosting environment: Development
+2025-09-14 13:54:27.130 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-14 13:54:31.989 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Product/Create - application/json 91
+2025-09-14 13:54:32.059 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-14 13:54:32.098 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:54:32.110 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandResponse]] CreateAsync(EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandRequest) on controller EShopCase.Api.Controllers.ProductCont.ProductController (EShopCase.Api).
+2025-09-14 13:54:32.112 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-14 13:54:32.185 +03:00 [INF] Executing action method EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) - Validation state: "Valid"
+2025-09-14 13:54:45.162 +03:00 [INF] Executed action EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) in 13049.4936ms
+2025-09-14 13:54:45.164 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:56:05.761 +03:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:56:05.895 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:56:06.026 +03:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:56:06.095 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:56:06.097 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:56:06.109 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-14 13:56:06.303 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-14 13:56:06.318 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-14 13:56:06.322 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-14 13:56:06.372 +03:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-14 13:56:06.374 +03:00 [INF] Development migrate & seed completed.
+2025-09-14 13:56:06.458 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-14 13:56:06.517 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-14 13:56:06.518 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-14 13:56:06.518 +03:00 [INF] Hosting environment: Development
+2025-09-14 13:56:06.518 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-14 13:56:12.215 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Product/Create - application/json 91
+2025-09-14 13:56:12.269 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-14 13:56:16.501 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:56:16.511 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandResponse]] CreateAsync(EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandRequest) on controller EShopCase.Api.Controllers.ProductCont.ProductController (EShopCase.Api).
+2025-09-14 13:56:16.513 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-14 13:56:16.589 +03:00 [INF] Executing action method EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) - Validation state: "Valid"
+2025-09-14 13:56:31.616 +03:00 [ERR] Failed executing DbCommand (55ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?' (DbType = Decimal), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Product" ("CategoryId", "CreatedDate", "Description", "IsActive", "IsDeleted", "ModifyDate", "Name", "Price", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+RETURNING "Id";
+2025-09-14 13:56:31.638 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'EShopCase.Infrastructure.Context.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_Product"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_Product"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Product
+    ConstraintName: PK_Product
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_Product"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_Product"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Product
+    ConstraintName: PK_Product
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-14 13:56:33.853 +03:00 [INF] Executed action EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) in 17338.2855ms
+2025-09-14 13:56:33.855 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:57:46.226 +03:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:57:46.304 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:57:46.365 +03:00 [INF] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:57:46.474 +03:00 [INF] Executed DbCommand (71ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-14 13:57:46.524 +03:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-14 13:57:46.533 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-14 13:57:46.672 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-14 13:57:46.678 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-14 13:57:46.705 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-14 13:57:46.729 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-14 13:57:46.779 +03:00 [INF] Development migrate & seed completed.
+2025-09-14 13:57:46.843 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-14 13:57:46.885 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-14 13:57:46.909 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-14 13:57:46.909 +03:00 [INF] Hosting environment: Development
+2025-09-14 13:57:46.910 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-14 13:57:47.691 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Product/Create - application/json 91
+2025-09-14 13:57:47.718 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-14 13:57:47.749 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:57:47.758 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandResponse]] CreateAsync(EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandRequest) on controller EShopCase.Api.Controllers.ProductCont.ProductController (EShopCase.Api).
+2025-09-14 13:57:47.761 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-14 13:57:47.835 +03:00 [INF] Executing action method EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) - Validation state: "Valid"
+2025-09-14 13:57:54.876 +03:00 [ERR] Failed executing DbCommand (32ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?' (DbType = Decimal), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Product" ("CategoryId", "CreatedDate", "Description", "IsActive", "IsDeleted", "ModifyDate", "Name", "Price", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+RETURNING "Id";
+2025-09-14 13:57:54.984 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'EShopCase.Infrastructure.Context.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_Product"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_Product"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Product
+    ConstraintName: PK_Product
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_Product"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_Product"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Product
+    ConstraintName: PK_Product
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-14 13:59:11.996 +03:00 [INF] Executed action EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) in 84232.1182ms
+2025-09-14 13:59:12.001 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:59:14.800 +03:00 [ERR] Unhandled exception
+System.Exception: An error occurred while saving the entity changes. See the inner exception for details.
+   at EShopCase.Infrastructure.Concrete.UnitOfWorks.UnitOfWork.SaveAsync(CancellationToken cancellationToken) in /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Infrastructure/Concrete/UnitOfWorks/UnitOfWork.cs:line 43
+   at EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandHandler.Handle(CreateProductCommandRequest request, CancellationToken cancellationToken) in /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Application/Features/ProductsFeature/Commands/CreateProduct/CreateProductCommandHandler.cs:line 23
+   at EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync(CreateProductCommandRequest request) in /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api/Controllers/ProductCont/ProductController.cs:line 39
+   at lambda_method19(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_4>d.MoveNext() in /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api/Program.cs:line 136
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EShopCase.Application.Middleware.Exceptions.ExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Application/Middleware/Exceptions/ExceptionMiddleware.cs:line 19
+2025-09-14 13:59:14.864 +03:00 [ERR] HTTP POST /api/Product/Create responded 500 in 87152.4525 ms
+2025-09-14 13:59:14.874 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Product/Create - 500 null application/json; charset=utf-8 87180.4564ms
+2025-09-14 13:59:20.120 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Product/Create - application/json 91
+2025-09-14 13:59:20.134 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 13:59:20.135 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandResponse]] CreateAsync(EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandRequest) on controller EShopCase.Api.Controllers.ProductCont.ProductController (EShopCase.Api).
+2025-09-14 13:59:20.144 +03:00 [INF] Executing action method EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) - Validation state: "Valid"
+2025-09-14 14:00:33.554 +03:00 [INF] Executed DbCommand (308ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?' (DbType = Decimal), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Product" ("CategoryId", "CreatedDate", "Description", "IsActive", "IsDeleted", "ModifyDate", "Name", "Price", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+RETURNING "Id";
+2025-09-14 14:00:39.556 +03:00 [INF] Executed action method EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 79408.2816ms.
+2025-09-14 14:00:39.563 +03:00 [INF] Executing ObjectResult, writing value of type 'EShopCase.Application.Bases.ResponseDto`1[[EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandResponse, EShopCase.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-14 14:00:39.585 +03:00 [INF] Executed action EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) in 79448.9078ms
+2025-09-14 14:00:39.586 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-14 14:00:39.586 +03:00 [INF] HTTP POST /api/Product/Create responded 200 in 79456.2335 ms
+2025-09-14 14:00:39.587 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Product/Create - 200 null application/json; charset=utf-8 79466.7013ms

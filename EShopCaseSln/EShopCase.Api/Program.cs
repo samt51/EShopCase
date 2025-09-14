@@ -1,9 +1,11 @@
 using System.Diagnostics;
 using EShopCase.Application;
+using EShopCase.Application.Filters;
 using EShopCase.Application.Middleware.Exceptions;
 using EShopCase.Infrastructure;
 using EShopCase.Infrastructure.Context;
 using EShopCase.Infrastructure.Extensions;
+using Microsoft.OpenApi.Models;
 using Serilog;
 using Serilog.Context;
 using Serilog.Events;
@@ -58,8 +60,41 @@ builder.Host.UseSerilog((ctx, sp, cfg) =>
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddApplication(builder.Configuration);
 builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddSwaggerGen(c =>
+{
+    c.OperationFilter<DescriptionOperationFilter>();
+
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "EShop API", Version = "v1", Description = "EShop API swagger client." });
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "'Bearer' yaz�p bo�luk b�rakt�ktan sonra Token'� Girebilirsiniz \r\n\r\n �rne�in: \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9\""
+    });
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement()
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
+
+    });
+});
+
+
 
 var app = builder.Build();
 

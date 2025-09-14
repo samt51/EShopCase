@@ -19,7 +19,7 @@ public class ReadRepository<T> : IReadRepository<T> where T : class, IEntityBase
 
 
         public async Task<IQueryable<T>> GetAllQueryAsync(Expression<Func<T, bool>>? predicate = null, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null,
-            Expression<Func<T, T>>? selector = null, bool enableTracking = false)
+            Expression<Func<T, T>>? selector = null, bool enableTracking = false,CancellationToken cancellationToken= default)
         {
             IQueryable<T> query = Table;
             
