@@ -62,7 +62,6 @@ public class GetAllProductQueryHandler : BaseHandler, IRequestHandler<GetAllProd
         var map = mapper.Map< GetAllProductQueryResponse,Products>(query);
         
         var items = await query
-            .OrderBy(p => p.Name)
             .Skip((page - 1) * pageSize)
             .Take(pageSize)
             .Select(p => new GetAllProductQueryResponse

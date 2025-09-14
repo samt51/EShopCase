@@ -11,7 +11,7 @@ public interface IReadRepository<T> where T : class, IEntityBase, new()
         Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null,
         Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null,
         Expression<Func<T, T>>? selector = null,
-        bool enableTracking = false);
+        bool enableTracking = false,CancellationToken cancellationToken=default);
     Task<IList<T>> GetAllAsync(
         Expression<Func<T, bool>>? predicate = null,
         Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null,
