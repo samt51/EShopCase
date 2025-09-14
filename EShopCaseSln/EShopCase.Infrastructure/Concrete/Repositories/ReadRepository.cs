@@ -87,7 +87,7 @@ public class ReadRepository<T> : IReadRepository<T> where T : class, IEntityBase
         /// <param name="enableTracking"></param>
         /// <returns></returns>
         /// <exception cref="NotFoundException"></exception>
-        public async Task<T> GetAsync(Expression<Func<T, bool>> predicate, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null, bool enableTracking = false)
+        public async Task<T?> GetAsync(Expression<Func<T, bool>> predicate, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null, bool enableTracking = false)
         {
             IQueryable<T> queryable = Table;
             if (!enableTracking) queryable = queryable.AsNoTracking();

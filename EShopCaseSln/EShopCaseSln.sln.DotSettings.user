@@ -8,6 +8,10 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7ce4bb36_002Dbcb3_002D431a_002Dbf72_002D76e6cf373b36/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Filters_Deleted_And_Paginates_Defaults" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::9C06BB5A-304A-486F-B71C-B2D47E629DBD::net8.0::EShopCase.Test.Tests.ProductTest.GetAllProductQueryHandlerTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::9C06BB5A-304A-486F-B71C-B2D47E629DBD::net8.0::EShopCase.Test.Tests.ProductTest.CreateProductCommandHandlerTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::9C06BB5A-304A-486F-B71C-B2D47E629DBD::net8.0::EShopCase.Test.Tests.ProductTest.UpdateProductCommandHandlerTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::9C06BB5A-304A-486F-B71C-B2D47E629DBD::net8.0::EShopCase.Test.Tests.ProductTest.DeleteProductCommandHandlerTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::9C06BB5A-304A-486F-B71C-B2D47E629DBD::net8.0::EShopCase.Test.Tests.ProductTest.GetByIdProductQueryHandlerTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	</wpf:ResourceDictionary>
