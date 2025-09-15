@@ -26,6 +26,7 @@ public class ResponseDto<T>
     {
         return new ResponseDto<T> {  Errors = errors, StatusCode = statusCode, IsSuccess = false };
     }
+    
     public ResponseDto<T> Fail(T data, string errors, int statusCode)
     {
         Errors.Add(errors);

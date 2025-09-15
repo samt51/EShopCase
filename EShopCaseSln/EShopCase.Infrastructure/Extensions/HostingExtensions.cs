@@ -56,8 +56,8 @@ public static class HostingExtensions
             if (!await db.Users.AnyAsync(ct))
             {
                 await db.Users.AddRangeAsync(
-                    new Users { Id = 1, Email = "samt51.m@icloud.com",Password = PasswordHash.HashPassword("123456"),RoleId = 1},
-                    new Users { Id = 2, Email = "samt51.m@hotmail.com",Password = PasswordHash.HashPassword("123456"),RoleId = 2});
+                    new Users { Id = 1, Email = "samt51.m@icloud.com",Password = PasswordHash.HashPassword("123456"),RoleId = 1,FirstName = "samet",LastName = "bağlan"},
+                    new Users { Id = 2, Email = "samt51.m@hotmail.com",Password = PasswordHash.HashPassword("123456"),RoleId = 2,FirstName = "samet",LastName = "bağlan"});
                 await db.SaveChangesAsync(ct);
             }
         }

@@ -12,17 +12,17 @@ namespace EShopCase.Api.Controllers.UserCont;
 
 [ApiController]
 [ApiVersion("1.0")]
-[Route("api/v{version:apiVersion}/user")]
+[Route("api/v{version:apiVersion}/users")]
 public class UserController(IMediator mediator) : ControllerBase
 {
     private readonly IMediator _mediator = mediator;
-    [HttpPost]
+    [HttpPost("login")]
     [SwaggerDescriptionAttirbute("Login")]
     public async Task<ResponseDto<LoginCommandResponse>> LoginAsync(LoginCommandRequest request)
     {
         return await _mediator.Send(request);
     }
-    [HttpPost]
+    [HttpPost("register")]
     [SwaggerDescriptionAttirbute("Register")]
     public async Task<ResponseDto<RegisterCommandResponse>> RegisterAsync(RegisterCommandRequest request)
     {
@@ -34,7 +34,7 @@ public class UserController(IMediator mediator) : ControllerBase
     {
         return await _mediator.Send(new GetAllUserQueryRequest());
     }
-    [HttpGet("{userId}")]
+    [HttpGet("{userId:int}")]
     [SwaggerDescriptionAttirbute("Id göre Kullanıcı")]
     public async Task<ResponseDto<GetByUserQueryResponse>> GetByIdAsync(int userId)
     {

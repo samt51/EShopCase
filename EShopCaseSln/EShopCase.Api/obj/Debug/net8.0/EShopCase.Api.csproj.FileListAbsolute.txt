@@ -159,3 +159,4 @@
 /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api/bin/Debug/net8.0/Asp.Versioning.Mvc.dll
 /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api/bin/Debug/net8.0/Asp.Versioning.Mvc.ApiExplorer.dll
 /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
