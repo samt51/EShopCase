@@ -2423,3 +2423,869 @@ SELECT EXISTS (
 2025-09-15 01:41:19.995 +03:00 [INF] Executed endpoint 'Health checks'
 2025-09-15 01:41:19.997 +03:00 [INF] HTTP GET /health responded 200 in 230.7200 ms
 2025-09-15 01:41:19.998 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/health - 200 null text/plain; charset=utf-8 237.2765ms
+2025-09-15 01:56:19.205 +03:00 [INF] Executed DbCommand (52ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 01:56:19.310 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-15 01:56:19.367 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 01:56:19.372 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 01:56:19.395 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-15 01:56:19.401 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-15 01:56:19.522 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-15 01:56:19.577 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-15 01:56:19.649 +03:00 [INF] Executed DbCommand (70ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-15 01:56:19.710 +03:00 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-15 01:56:19.712 +03:00 [INF] Development migrate & seed completed.
+2025-09-15 01:56:19.822 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-15 01:56:19.890 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-15 01:56:19.890 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-15 01:56:19.890 +03:00 [INF] Hosting environment: Development
+2025-09-15 01:56:19.890 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-15 01:56:56.471 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-09-15 01:56:56.620 +03:00 [INF] HTTP GET /swagger/index.html responded 200 in 90.7875 ms
+2025-09-15 01:56:56.621 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 150.9991ms
+2025-09-15 01:56:56.755 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-09-15 01:56:56.815 +03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 59.4731 ms
+2025-09-15 01:56:56.815 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 60.5815ms
+2025-09-15 01:57:07.541 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/user - application/json 60
+2025-09-15 01:57:07.565 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+EShopCase.Api.Controllers.UserCont.UserController.LoginAsync (EShopCase.Api)
+EShopCase.Api.Controllers.UserCont.UserController.RegisterAsync (EShopCase.Api)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.SelectAsync(HttpContext httpContext, CandidateSet candidateSet)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.SelectEndpointWithPoliciesAsync(HttpContext httpContext, IEndpointSelectorPolicy[] policies, CandidateSet candidateSet)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatch|10_1(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task matchTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-15 01:57:07.626 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/v1/user - 500 null text/plain; charset=utf-8 85.0536ms
+2025-09-15 02:00:56.617 +03:00 [INF] Executed DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:00:56.691 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-15 02:00:56.849 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:00:56.880 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:00:56.881 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-15 02:00:56.896 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-15 02:00:57.165 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-15 02:00:57.196 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-15 02:00:57.198 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-15 02:00:57.318 +03:00 [INF] Executed DbCommand (73ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-15 02:00:57.320 +03:00 [INF] Development migrate & seed completed.
+2025-09-15 02:00:57.415 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-15 02:00:57.460 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-15 02:00:57.460 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-15 02:00:57.461 +03:00 [INF] Hosting environment: Development
+2025-09-15 02:00:57.461 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-15 02:01:02.618 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-09-15 02:01:02.727 +03:00 [INF] HTTP GET /swagger/index.html responded 200 in 85.6825 ms
+2025-09-15 02:01:02.728 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 110.3383ms
+2025-09-15 02:01:02.843 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-09-15 02:01:02.898 +03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 54.9110 ms
+2025-09-15 02:01:02.898 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 55.6441ms
+2025-09-15 02:01:08.575 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/users/login - application/json 60
+2025-09-15 02:01:08.596 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-15 02:01:08.653 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.UserCont.UserController.LoginAsync (EShopCase.Api)'
+2025-09-15 02:01:08.664 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.UserFeature.Commands.Login.LoginCommandResponse]] LoginAsync(EShopCase.Application.Features.UserFeature.Commands.Login.LoginCommandRequest) on controller EShopCase.Api.Controllers.UserCont.UserController (EShopCase.Api).
+2025-09-15 02:01:08.666 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-15 02:01:08.717 +03:00 [INF] Executing action method EShopCase.Api.Controllers.UserCont.UserController.LoginAsync (EShopCase.Api) - Validation state: "Valid"
+2025-09-15 02:01:39.088 +03:00 [ERR] Failed executing DbCommand (99ms) [Parameters=[@__request_Email_0='?', @__HashPassword_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedDate", u."Email", u."FirstName", u."IsActive", u."IsDeleted", u."LastName", u."ModifyDate", u."Password", u."RoleId", r."Id", r."CreatedDate", r."IsActive", r."IsDeleted", r."ModifyDate", r."Name"
+FROM "Users" AS u
+INNER JOIN "Roles" AS r ON u."RoleId" = r."Id"
+WHERE u."Email" = @__request_Email_0 AND u."Password" = @__HashPassword_1 AND NOT (u."IsDeleted")
+LIMIT 1
+2025-09-15 02:01:39.157 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'EShopCase.Infrastructure.Context.AppDbContext'.
+Npgsql.PostgresException (0x80004005): 42703: column u.FirstName does not exist
+
+POSITION: 44
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column u.FirstName does not exist
+    Position: 44
+    File: parse_relation.c
+    Line: 3727
+    Routine: errorMissingColumn
+Npgsql.PostgresException (0x80004005): 42703: column u.FirstName does not exist
+
+POSITION: 44
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column u.FirstName does not exist
+    Position: 44
+    File: parse_relation.c
+    Line: 3727
+    Routine: errorMissingColumn
+2025-09-15 02:11:02.217 +03:00 [INF] Executed DbCommand (69ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:11:02.274 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-15 02:11:02.351 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:11:02.406 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:11:02.433 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-15 02:11:02.444 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-15 02:11:02.583 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-15 02:11:02.590 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-15 02:11:02.593 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-15 02:11:02.595 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-15 02:11:02.597 +03:00 [INF] Development migrate & seed completed.
+2025-09-15 02:11:02.726 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-15 02:11:02.793 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-15 02:11:02.793 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-15 02:11:02.793 +03:00 [INF] Hosting environment: Development
+2025-09-15 02:11:02.794 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-15 02:11:06.815 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/users/login - application/json 60
+2025-09-15 02:11:06.890 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-15 02:11:06.926 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.UserCont.UserController.LoginAsync (EShopCase.Api)'
+2025-09-15 02:11:06.936 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.UserFeature.Commands.Login.LoginCommandResponse]] LoginAsync(EShopCase.Application.Features.UserFeature.Commands.Login.LoginCommandRequest) on controller EShopCase.Api.Controllers.UserCont.UserController (EShopCase.Api).
+2025-09-15 02:11:06.938 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-15 02:11:07.008 +03:00 [INF] Executing action method EShopCase.Api.Controllers.UserCont.UserController.LoginAsync (EShopCase.Api) - Validation state: "Valid"
+2025-09-15 02:11:10.167 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[@__request_Email_0='?', @__HashPassword_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedDate", u."Email", u."FirstName", u."IsActive", u."IsDeleted", u."LastName", u."ModifyDate", u."Password", u."RoleId", r."Id", r."CreatedDate", r."IsActive", r."IsDeleted", r."ModifyDate", r."Name"
+FROM "Users" AS u
+INNER JOIN "Roles" AS r ON u."RoleId" = r."Id"
+WHERE u."Email" = @__request_Email_0 AND u."Password" = @__HashPassword_1 AND NOT (u."IsDeleted")
+LIMIT 1
+2025-09-15 02:11:52.809 +03:00 [INF] Executed action method EShopCase.Api.Controllers.UserCont.UserController.LoginAsync (EShopCase.Api), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 45786.6633ms.
+2025-09-15 02:11:52.829 +03:00 [INF] Executing ObjectResult, writing value of type 'EShopCase.Application.Bases.ResponseDto`1[[EShopCase.Application.Features.UserFeature.Commands.Login.LoginCommandResponse, EShopCase.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-15 02:11:52.888 +03:00 [INF] Executed action EShopCase.Api.Controllers.UserCont.UserController.LoginAsync (EShopCase.Api) in 45949.2557ms
+2025-09-15 02:11:52.889 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.UserCont.UserController.LoginAsync (EShopCase.Api)'
+2025-09-15 02:11:52.899 +03:00 [INF] HTTP POST /api/v1/users/login responded 200 in 46016.7172 ms
+2025-09-15 02:11:52.907 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/v1/users/login - 200 null application/json; charset=utf-8 46093.4972ms
+2025-09-15 02:13:14.090 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-09-15 02:13:14.230 +03:00 [INF] HTTP GET /swagger/index.html responded 200 in 125.1914 ms
+2025-09-15 02:13:14.231 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 142.3558ms
+2025-09-15 02:13:14.356 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-09-15 02:13:14.529 +03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 172.5165 ms
+2025-09-15 02:13:14.530 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 173.3702ms
+2025-09-15 02:14:00.197 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/products/Create - application/json 105
+2025-09-15 02:14:00.214 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2025-09-15 02:14:00.219 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-15 02:14:00.219 +03:00 [INF] HTTP POST /api/v1/products/Create responded 401 in 16.8958 ms
+2025-09-15 02:14:00.220 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/v1/products/Create - 401 0 null 22.8097ms
+2025-09-15 02:14:55.041 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/users/login - application/json 60
+2025-09-15 02:14:55.062 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.UserCont.UserController.LoginAsync (EShopCase.Api)'
+2025-09-15 02:14:55.068 +03:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.UserFeature.Commands.Login.LoginCommandResponse]] LoginAsync(EShopCase.Application.Features.UserFeature.Commands.Login.LoginCommandRequest) on controller EShopCase.Api.Controllers.UserCont.UserController (EShopCase.Api).
+2025-09-15 02:14:55.078 +03:00 [INF] Executing action method EShopCase.Api.Controllers.UserCont.UserController.LoginAsync (EShopCase.Api) - Validation state: "Valid"
+2025-09-15 02:14:55.371 +03:00 [INF] Executed DbCommand (163ms) [Parameters=[@__request_Email_0='?', @__HashPassword_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."CreatedDate", u."Email", u."FirstName", u."IsActive", u."IsDeleted", u."LastName", u."ModifyDate", u."Password", u."RoleId", r."Id", r."CreatedDate", r."IsActive", r."IsDeleted", r."ModifyDate", r."Name"
+FROM "Users" AS u
+INNER JOIN "Roles" AS r ON u."RoleId" = r."Id"
+WHERE u."Email" = @__request_Email_0 AND u."Password" = @__HashPassword_1 AND NOT (u."IsDeleted")
+LIMIT 1
+2025-09-15 02:14:55.608 +03:00 [INF] Executed action method EShopCase.Api.Controllers.UserCont.UserController.LoginAsync (EShopCase.Api), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 529.7675ms.
+2025-09-15 02:14:55.611 +03:00 [INF] Executing ObjectResult, writing value of type 'EShopCase.Application.Bases.ResponseDto`1[[EShopCase.Application.Features.UserFeature.Commands.Login.LoginCommandResponse, EShopCase.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-15 02:14:55.614 +03:00 [INF] Executed action EShopCase.Api.Controllers.UserCont.UserController.LoginAsync (EShopCase.Api) in 545.0078ms
+2025-09-15 02:14:55.615 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.UserCont.UserController.LoginAsync (EShopCase.Api)'
+2025-09-15 02:14:55.616 +03:00 [INF] HTTP POST /api/v1/users/login responded 200 in 564.3108 ms
+2025-09-15 02:14:55.617 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/v1/users/login - 200 null application/json; charset=utf-8 576.1045ms
+2025-09-15 02:15:14.411 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/products/Create - application/json 105
+2025-09-15 02:15:14.480 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-15 02:15:14.488 +03:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandResponse]] CreateAsync(EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandRequest) on controller EShopCase.Api.Controllers.ProductCont.ProductController (EShopCase.Api).
+2025-09-15 02:15:14.509 +03:00 [INF] Executing action method EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) - Validation state: "Valid"
+2025-09-15 02:15:23.115 +03:00 [INF] Executed DbCommand (119ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?' (DbType = Decimal), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Product" ("CategoryId", "CreatedDate", "Description", "IsActive", "IsDeleted", "ModifyDate", "Name", "Price", "Stock")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+RETURNING "Id";
+2025-09-15 02:15:23.166 +03:00 [INF] Executed action method EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 8656.064ms.
+2025-09-15 02:15:23.168 +03:00 [INF] Executing ObjectResult, writing value of type 'EShopCase.Application.Bases.ResponseDto`1[[EShopCase.Application.Features.ProductsFeature.Commands.CreateProduct.CreateProductCommandResponse, EShopCase.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-15 02:15:23.174 +03:00 [INF] Executed action EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api) in 8685.0907ms
+2025-09-15 02:15:23.174 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.ProductCont.ProductController.CreateAsync (EShopCase.Api)'
+2025-09-15 02:15:23.174 +03:00 [INF] HTTP POST /api/v1/products/Create responded 200 in 8754.9477 ms
+2025-09-15 02:15:23.174 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/v1/products/Create - 200 null application/json; charset=utf-8 8768.0585ms
+2025-09-15 02:16:53.666 +03:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:16:53.746 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-15 02:16:53.758 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:16:53.762 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:16:53.786 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-15 02:16:53.791 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-15 02:16:53.907 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-15 02:16:53.914 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-15 02:16:53.964 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-15 02:16:53.966 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-15 02:16:53.967 +03:00 [INF] Development migrate & seed completed.
+2025-09-15 02:16:54.057 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-15 02:16:54.107 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-15 02:16:54.108 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-15 02:16:54.108 +03:00 [INF] Hosting environment: Development
+2025-09-15 02:16:54.108 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-15 02:17:27.132 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/category/Create - application/json 16
+2025-09-15 02:17:27.243 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-15 02:17:27.352 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api)'
+2025-09-15 02:17:27.362 +03:00 [INF] Route matched with {action = "Create", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.CategoryFeature.Commands.CreateCategory.CreateCategoryCommandResponse]] CreateAsync(EShopCase.Application.Features.CategoryFeature.Commands.CreateCategory.CreateCategoryCommandRequest) on controller EShopCase.Api.Controllers.CategoryCont.CategoryController (EShopCase.Api).
+2025-09-15 02:17:27.364 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-15 02:17:27.436 +03:00 [INF] Executing action method EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api) - Validation state: "Valid"
+2025-09-15 02:17:46.183 +03:00 [INF] Executed DbCommand (52ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:17:46.234 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-15 02:17:46.246 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:17:46.297 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:17:46.321 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-15 02:17:46.328 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-15 02:17:46.536 +03:00 [INF] Executed DbCommand (75ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-15 02:17:46.633 +03:00 [INF] Executed DbCommand (92ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-15 02:17:46.636 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-15 02:17:46.638 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-15 02:17:46.640 +03:00 [INF] Development migrate & seed completed.
+2025-09-15 02:17:46.761 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-15 02:17:46.816 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-15 02:17:46.816 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-15 02:17:46.816 +03:00 [INF] Hosting environment: Development
+2025-09-15 02:17:46.817 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-15 02:17:49.937 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/category/Create - application/json 17
+2025-09-15 02:17:50.011 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-15 02:17:50.077 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api)'
+2025-09-15 02:17:50.086 +03:00 [INF] Route matched with {action = "Create", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.CategoryFeature.Commands.CreateCategory.CreateCategoryCommandResponse]] CreateAsync(EShopCase.Application.Features.CategoryFeature.Commands.CreateCategory.CreateCategoryCommandRequest) on controller EShopCase.Api.Controllers.CategoryCont.CategoryController (EShopCase.Api).
+2025-09-15 02:17:50.089 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-15 02:17:50.158 +03:00 [INF] Executing action method EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api) - Validation state: "Valid"
+2025-09-15 02:23:50.003 +03:00 [INF] Executed DbCommand (68ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:23:50.062 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-15 02:23:50.170 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:23:50.177 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:23:50.199 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-15 02:23:50.207 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-15 02:23:50.336 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-15 02:23:50.341 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-15 02:23:50.415 +03:00 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-15 02:23:50.418 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-15 02:23:50.420 +03:00 [INF] Development migrate & seed completed.
+2025-09-15 02:23:50.541 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-15 02:23:50.584 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-15 02:23:50.584 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-15 02:23:50.585 +03:00 [INF] Hosting environment: Development
+2025-09-15 02:23:50.585 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-15 02:23:59.201 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/category/Create - application/json 16
+2025-09-15 02:23:59.266 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-15 02:23:59.355 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api)'
+2025-09-15 02:23:59.364 +03:00 [INF] Route matched with {action = "Create", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.CategoryFeature.Commands.CreateCategory.CreateCategoryCommandResponse]] CreateAsync(EShopCase.Application.Features.CategoryFeature.Commands.CreateCategory.CreateCategoryCommandRequest) on controller EShopCase.Api.Controllers.CategoryCont.CategoryController (EShopCase.Api).
+2025-09-15 02:23:59.367 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-15 02:23:59.447 +03:00 [INF] Executing action method EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api) - Validation state: "Valid"
+2025-09-15 02:24:45.361 +03:00 [INF] Executed DbCommand (119ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:24:45.495 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-15 02:24:45.565 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:24:45.598 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:24:45.627 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-15 02:24:45.636 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-15 02:24:45.805 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-15 02:24:45.837 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-15 02:24:45.839 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-15 02:24:45.843 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-15 02:24:45.845 +03:00 [INF] Development migrate & seed completed.
+2025-09-15 02:24:45.982 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-15 02:24:46.049 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-15 02:24:46.049 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-15 02:24:46.050 +03:00 [INF] Hosting environment: Development
+2025-09-15 02:24:46.050 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-15 02:24:48.427 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/category/Create - application/json 16
+2025-09-15 02:24:48.506 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-15 02:24:48.581 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api)'
+2025-09-15 02:24:48.595 +03:00 [INF] Route matched with {action = "Create", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.CategoryFeature.Commands.CreateCategory.CreateCategoryCommandResponse]] CreateAsync(EShopCase.Application.Features.CategoryFeature.Commands.CreateCategory.CreateCategoryCommandRequest) on controller EShopCase.Api.Controllers.CategoryCont.CategoryController (EShopCase.Api).
+2025-09-15 02:24:48.599 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-15 02:24:48.673 +03:00 [INF] Executing action method EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api) - Validation state: "Valid"
+2025-09-15 02:24:53.986 +03:00 [ERR] Failed executing DbCommand (8ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Boolean), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime), @p4='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Category" ("CreatedDate", "IsActive", "IsDeleted", "ModifyDate", "Name")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2025-09-15 02:24:54.039 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'EShopCase.Infrastructure.Context.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_Category"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_Category"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Category
+    ConstraintName: PK_Category
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_Category"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_Category"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Category
+    ConstraintName: PK_Category
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-15 02:27:52.338 +03:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:27:52.390 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-15 02:27:52.434 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:27:52.514 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:27:52.515 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-15 02:27:52.521 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-15 02:27:52.636 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-15 02:27:52.641 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-15 02:27:52.643 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-15 02:27:52.718 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-15 02:27:52.720 +03:00 [INF] Development migrate & seed completed.
+2025-09-15 02:27:52.858 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-15 02:27:52.901 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-15 02:27:52.901 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-15 02:27:52.901 +03:00 [INF] Hosting environment: Development
+2025-09-15 02:27:52.901 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-15 02:27:58.609 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/category/Create - application/json 16
+2025-09-15 02:27:58.668 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-15 02:27:58.772 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api)'
+2025-09-15 02:27:58.784 +03:00 [INF] Route matched with {action = "Create", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.CategoryFeature.Commands.CreateCategory.CreateCategoryCommandResponse]] CreateAsync(EShopCase.Application.Features.CategoryFeature.Commands.CreateCategory.CreateCategoryCommandRequest) on controller EShopCase.Api.Controllers.CategoryCont.CategoryController (EShopCase.Api).
+2025-09-15 02:27:58.789 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-15 02:28:04.007 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-09-15 02:28:04.050 +03:00 [INF] Executed action EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api) in 5264.6375ms
+2025-09-15 02:28:04.051 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api)'
+2025-09-15 02:28:04.052 +03:00 [INF] HTTP POST /api/v1/category/Create responded 400 in 5396.7366 ms
+2025-09-15 02:28:04.053 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/v1/category/Create - 400 null application/problem+json; charset=utf-8 5445.6181ms
+2025-09-15 02:28:33.582 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/category/Create - application/json 16
+2025-09-15 02:28:33.593 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api)'
+2025-09-15 02:28:33.595 +03:00 [INF] Route matched with {action = "Create", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.CategoryFeature.Commands.CreateCategory.CreateCategoryCommandResponse]] CreateAsync(EShopCase.Application.Features.CategoryFeature.Commands.CreateCategory.CreateCategoryCommandRequest) on controller EShopCase.Api.Controllers.CategoryCont.CategoryController (EShopCase.Api).
+2025-09-15 02:28:41.004 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-09-15 02:28:41.014 +03:00 [INF] Executed action EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api) in 7418.3378ms
+2025-09-15 02:28:41.014 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api)'
+2025-09-15 02:28:41.015 +03:00 [INF] HTTP POST /api/v1/category/Create responded 400 in 7427.4570 ms
+2025-09-15 02:28:41.015 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/v1/category/Create - 400 null application/problem+json; charset=utf-8 7434.2812ms
+2025-09-15 02:28:55.768 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/category/Create - application/json 16
+2025-09-15 02:28:55.775 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api)'
+2025-09-15 02:28:55.775 +03:00 [INF] Route matched with {action = "Create", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.CategoryFeature.Commands.CreateCategory.CreateCategoryCommandResponse]] CreateAsync(EShopCase.Application.Features.CategoryFeature.Commands.CreateCategory.CreateCategoryCommandRequest) on controller EShopCase.Api.Controllers.CategoryCont.CategoryController (EShopCase.Api).
+2025-09-15 02:28:57.463 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-09-15 02:28:57.464 +03:00 [INF] Executed action EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api) in 1688.377ms
+2025-09-15 02:28:57.464 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api)'
+2025-09-15 02:28:57.464 +03:00 [INF] HTTP POST /api/v1/category/Create responded 400 in 1694.6393 ms
+2025-09-15 02:28:57.464 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/v1/category/Create - 400 null application/problem+json; charset=utf-8 1696.6881ms
+2025-09-15 02:29:29.488 +03:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:29:29.563 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-15 02:29:29.578 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:29:29.683 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 02:29:29.689 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-15 02:29:29.698 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-15 02:29:29.884 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-15 02:29:29.983 +03:00 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-15 02:29:30.057 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-15 02:29:30.060 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-15 02:29:30.062 +03:00 [INF] Development migrate & seed completed.
+2025-09-15 02:29:30.232 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-15 02:29:30.281 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-15 02:29:30.281 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-15 02:29:30.281 +03:00 [INF] Hosting environment: Development
+2025-09-15 02:29:30.281 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-15 02:29:31.844 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/category/Create - application/json 16
+2025-09-15 02:29:31.917 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-15 02:29:34.434 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api)'
+2025-09-15 02:29:34.453 +03:00 [INF] Route matched with {action = "Create", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.CategoryFeature.Commands.CreateCategory.CreateCategoryCommandResponse]] CreateAsync(EShopCase.Application.Features.CategoryFeature.Commands.CreateCategory.CreateCategoryCommandRequest) on controller EShopCase.Api.Controllers.CategoryCont.CategoryController (EShopCase.Api).
+2025-09-15 02:29:34.458 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-15 02:29:38.344 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-09-15 02:29:38.383 +03:00 [INF] Executed action EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api) in 3928.0676ms
+2025-09-15 02:29:38.384 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api)'
+2025-09-15 02:29:38.385 +03:00 [INF] HTTP POST /api/v1/category/Create responded 400 in 6480.7092 ms
+2025-09-15 02:29:38.386 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/v1/category/Create - 400 null application/problem+json; charset=utf-8 6543.7544ms
+2025-09-15 03:02:17.024 +03:00 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 03:02:17.136 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-15 03:02:17.224 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 03:02:17.303 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 03:02:17.353 +03:00 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-15 03:02:17.360 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-15 03:02:17.487 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-15 03:02:17.496 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-15 03:02:17.593 +03:00 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-15 03:02:17.621 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-15 03:02:17.623 +03:00 [INF] Development migrate & seed completed.
+2025-09-15 03:02:17.761 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-15 03:02:17.877 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-15 03:02:17.877 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-15 03:02:17.878 +03:00 [INF] Hosting environment: Development
+2025-09-15 03:02:17.878 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-15 03:02:27.952 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/category/Create - application/json 16
+2025-09-15 03:02:28.029 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-09-15 03:02:32.437 +03:00 [INF] Executing endpoint 'EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api)'
+2025-09-15 03:02:32.458 +03:00 [INF] Route matched with {action = "Create", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[EShopCase.Application.Bases.ResponseDto`1[EShopCase.Application.Features.CategoryFeature.Commands.CreateCategory.CreateCategoryCommandResponse]] CreateAsync(EShopCase.Application.Features.CategoryFeature.Commands.CreateCategory.CreateCategoryCommandRequest) on controller EShopCase.Api.Controllers.CategoryCont.CategoryController (EShopCase.Api).
+2025-09-15 03:02:32.462 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-15 03:02:44.102 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'EShopCase.Application.Bases.ResponseDto`1[[Microsoft.AspNetCore.Mvc.NoContentResult, Microsoft.AspNetCore.Mvc.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]'.
+2025-09-15 03:02:44.144 +03:00 [INF] Executed action EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api) in 11683.5556ms
+2025-09-15 03:02:44.145 +03:00 [INF] Executed endpoint 'EShopCase.Api.Controllers.CategoryCont.CategoryController.CreateAsync (EShopCase.Api)'
+2025-09-15 03:02:44.147 +03:00 [INF] HTTP POST /api/v1/category/Create responded 400 in 16128.0128 ms
+2025-09-15 03:02:44.148 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/v1/category/Create - 400 null application/json; charset=utf-8 16198.4501ms
+2025-09-15 03:13:35.289 +03:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 03:13:35.431 +03:00 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-15 03:13:35.483 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 03:13:35.585 +03:00 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2025-09-15 03:13:35.590 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-09-15 03:13:35.597 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-09-15 03:13:35.767 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Category" AS c)
+2025-09-15 03:13:35.775 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Product" AS p)
+2025-09-15 03:13:35.777 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Roles" AS r)
+2025-09-15 03:13:35.871 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-09-15 03:13:35.873 +03:00 [INF] Development migrate & seed completed.
+2025-09-15 03:13:35.991 +03:00 [INF] User profile is available. Using '/Users/sametbaglan/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-09-15 03:13:36.038 +03:00 [INF] Now listening on: http://localhost:5000
+2025-09-15 03:13:36.038 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-15 03:13:36.038 +03:00 [INF] Hosting environment: Development
+2025-09-15 03:13:36.038 +03:00 [INF] Content root path: /Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Api
+2025-09-15 03:13:41.874 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-09-15 03:13:41.996 +03:00 [INF] HTTP GET /swagger/index.html responded 200 in 97.0203 ms
+2025-09-15 03:13:41.997 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 124.2274ms
+2025-09-15 03:13:42.157 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-09-15 03:13:42.218 +03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 59.9936 ms
+2025-09-15 03:13:42.218 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 64.8528ms

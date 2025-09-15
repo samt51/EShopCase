@@ -17,31 +17,31 @@ namespace EShopCase.Api.Controllers.CategoryCont;
 public class CategoryController(IMediator mediator) : ControllerBase
 {
     private readonly IMediator _mediator = mediator;
-    [HttpGet("{id}")]
+    [HttpGet("{id:int}")]
     [SwaggerDescriptionAttirbute("Seçili Kategori")]
     public async Task<ResponseDto<GetByIdCategoryQueryResponse>> GetByIdAsync(int id)
     {
         return await _mediator.Send(new GetByIdCategoryQueryRequest(id));
     }
-    [HttpPost]
+    [HttpPost("GetAll")]
     [SwaggerDescriptionAttirbute("Kategoriler")]
     public async Task<ResponseDto<PagedResult<GetAllCategoryQueryResponse>>> GetAllAsync(GetAllCategoryQueryRequest request)
     {
         return await _mediator.Send(request);
     }
-    [HttpPost]
+    [HttpPost("Create")]
     [SwaggerDescriptionAttirbute("Yeni Kategori")]
     public async Task<ResponseDto<CreateCategoryCommandResponse>> CreateAsync(CreateCategoryCommandRequest request)
     {
         return await _mediator.Send(request);
     }
-    [HttpPut]
+    [HttpPut("Update")]
     [SwaggerDescriptionAttirbute("Kategori Güncelleme")]
     public async Task<ResponseDto<UpdateCategoryCommandResponse>> UpdateAsync(UpdateCategoryCommandRequest request)
     {
         return await _mediator.Send(request);
     }
-    [HttpPut]
+    [HttpPut("Delete")]
     [SwaggerDescriptionAttirbute("Kategori Silme")]
     public async Task<ResponseDto<DeleteCategoryCommandResponse>> DeleteAsync(DeleteCategoryCommandRequest request)
     {

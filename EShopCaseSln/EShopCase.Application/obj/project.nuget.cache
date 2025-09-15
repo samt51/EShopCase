@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "sBzli66q4ww=",
+  "dgSpecHash": "RACixj1EcS4=",
   "success": true,
   "projectFilePath": "/Users/sametbaglan/Documents/Projects/EShopCase/EShopCaseSln/EShopCase.Application/EShopCase.Application.csproj",
   "expectedPackageFiles": [
     "/Users/sametbaglan/.nuget/packages/fluentvalidation/12.0.0/fluentvalidation.12.0.0.nupkg.sha512",
+    "/Users/sametbaglan/.nuget/packages/fluentvalidation.aspnetcore/11.3.1/fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",
     "/Users/sametbaglan/.nuget/packages/fluentvalidation.dependencyinjectionextensions/12.0.0/fluentvalidation.dependencyinjectionextensions.12.0.0.nupkg.sha512",
     "/Users/sametbaglan/.nuget/packages/mediatr/13.0.0/mediatr.13.0.0.nupkg.sha512",
     "/Users/sametbaglan/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",

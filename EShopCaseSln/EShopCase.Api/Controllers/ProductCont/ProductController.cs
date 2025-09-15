@@ -23,33 +23,33 @@ public class ProductController : ControllerBase
     {
         this.mediator = mediator;
     }
-    [HttpGet("{id}")]
+    [HttpGet("{id:int}")]
     [SwaggerDescriptionAttirbute("Seçili Ürün")]
     public async Task<ResponseDto<GetByIdProductQueryResponse>> GetAllAsync(int id)
     {
         return await mediator.Send(new GetByIdProductQueryRequest(id));
     }
-    [HttpPost]
+    [HttpPost("GetAll")]
     [SwaggerDescriptionAttirbute("Ürünler")]
     public async Task<ResponseDto<PagedResult<GetAllProductQueryResponse>>> GetAllAsync(GetAllProductQueryRequest request)
     {
         return await mediator.Send(request);
     }
     [Authorize(Roles = "Admin")]
-    [HttpPost]
+    [HttpPost("Create")]
     [SwaggerDescriptionAttirbute("Yeni Ürün")]
     public async Task<ResponseDto<CreateProductCommandResponse>> CreateAsync(CreateProductCommandRequest request)
     {
         return await mediator.Send(request);
     }
     [Authorize(Roles = "Admin")]
-    [HttpPut]
+    [HttpPut("Update")]
     [SwaggerDescriptionAttirbute("Ürün Güncelleme")]
     public async Task<ResponseDto<UpdateProductCommandResponse>> UpdateAsync(UpdateProductCommandRequest request)
     {
         return await mediator.Send(request);
     }
-    [HttpPut]
+    [HttpPut("Delete")]
     [SwaggerDescriptionAttirbute("Ürün Silme")]
     public async Task<ResponseDto<DeleteProductCommandResponse>> DeleteAsync(DeleteProductCommandRequest request)
     {

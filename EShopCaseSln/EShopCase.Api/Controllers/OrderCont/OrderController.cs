@@ -15,19 +15,19 @@ namespace EShopCase.Api.Controllers.OrderCont;
 public class OrderController(IMediator mediator) : ControllerBase
 {
     private readonly IMediator _mediator = mediator;
-    [HttpPost]
+    [HttpPost("Create")]
     [SwaggerDescriptionAttirbute("Yeni Sipariş")]
     public async Task<ResponseDto<CreateOrderCommandResponse>> CreateAsync(CreateOrderCommandRequest request)
     {
         return await _mediator.Send(request);
     }
-    [HttpGet]
+    [HttpGet("GetAll")]
     [SwaggerDescriptionAttirbute("Tüm Siparişler")]
     public async Task<ResponseDto<List<GetAllOrderQueryResponse>>> GetAllOrderAsync()
     {
         return await _mediator.Send(new GetAllOrderQueryRequest());
     }
-    [HttpGet("{orderId}")]
+    [HttpGet("{orderId:int}")]
     [SwaggerDescriptionAttirbute("Id göre Sipariş")]
     public async Task<ResponseDto<GetByOrderQueryResponse>> GetByIdOrderAsync(int orderId)
     {

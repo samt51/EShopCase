@@ -156,7 +156,7 @@ builder.Services
     })
     .AddApiExplorer(options =>
     {
-        options.GroupNameFormat = "'v'VVV";   // v1, v1.0
+        options.GroupNameFormat = "'v'VVV";  
         options.SubstituteApiVersionInUrl = true;
     });
 
@@ -222,7 +222,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.Use(async (context, next) =>
 {
-    var username = context.User?.Identity?.IsAuthenticated != null || true ? context.User.Identities.Select(x => x.FindFirst("Id"))?.FirstOrDefault() : null;
+    var username = context.User?.Identity?.IsAuthenticated != null || true ? context?.User?.Identities.Select(x => x.FindFirst("Id"))?.FirstOrDefault() : null;
     if (username is not null)
     {
         LogContext.PushProperty("UserId", username.Value.ToString());

@@ -16,11 +16,13 @@ public class Users : EntityBase
     public int RoleId { get; set; }
     public Roles Role { get; set; }
     
-    public Users(int Id, string email, string password, int roleId)
+    public Users(int Id, string email, string password, int roleId,string firstName, string lastName)
     {
         this.Id = Id;
         this.Email = email;
         this.Password = password;
         this.RoleId = roleId;
+        this.FirstName = firstName;
+        this.LastName = lastName;
     }
 }
